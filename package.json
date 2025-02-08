@@ -18,7 +18,8 @@
     "url": "https://github.com/galenelijah/Valentine/issues"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "heroku": "^8.7.1"
   },
   "homepage": "https://github.com/galenelijah/Valentine#readme"
 }
