@@ -1,10 +1,24 @@
 // Reveal hidden message on button click
 const surpriseButton = document.getElementById('surpriseButton');
 const hiddenMessage = document.getElementById('hiddenMessage');
+const goBack = document.getElementById('back').addEventListener("click", goBackPage);
+const newButton = document.getElementById('newButton').addEventListener("click", revealSurprise);
 
 function showHiddenMessage(){
   hiddenMessage.classList.remove('hidden');
   surpriseButton.textContent = 'I Love You! 💖';
+}
+
+function newPage(){
+  window.location.href = "page.html";
+}
+
+function goBackPage(){
+  window.location.href = "index.html";
+}
+
+function revealSurprise(){
+  
 }
 
 // Add floating hearts
