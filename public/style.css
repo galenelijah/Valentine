@@ -97,10 +97,10 @@ body {
 
 
 /* 📱 Mobile Optimizations */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .letter {
       max-width: 100%;
-      padding: 10px;
+      padding: 15px;
       text-overflow: scroll;
       height: fit-content;
       max-height: 100%;
