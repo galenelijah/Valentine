@@ -44,10 +44,24 @@ function displayHeartMessages() {
     message.textContent = 'I love you';
     message.style.left = `${point.x}px`;
     message.style.top = `${point.y}px`;
-    message.style.transform = `rotate(${index * 3.6}deg)`; // Rotate each message
+    //message.style.transform = `rotate(${index * 3.6}deg)`; // Rotate each message
+    heartContainer.appendChild(message);
+  });
+}
+function displayHeartMessages2() {
+  const heartPoints = createHeart();
+
+  heartPoints.forEach((point, index) => {
+    const message = document.createElement('div');
+    message.classList.add('heart-text');
+    message.textContent = 'I love you';
+    message.style.left = `${50}px`;
+    message.style.top = `${800}px`;
+    //message.style.transform = `rotate(${index * 3.6}deg)`; // Rotate each message
     heartContainer.appendChild(message);
   });
 }
 
 // Call the function to display the heart
 displayHeartMessages();
+displayHeartMessages2();

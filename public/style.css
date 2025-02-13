@@ -49,6 +49,9 @@ body {
     margin-top: 20px;
     animation: float 3s ease-in-out infinite;
     display: flex;
+    width: 60%;
+    align-items: center;
+    position: absolute;
   }
   
   #photogallery img {
