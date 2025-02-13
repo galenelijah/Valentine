@@ -20,6 +20,9 @@ body {
   h1 {
     color: #ff6f61;
   }
+  h2 {
+    color: #ff6f61;
+  }
   
   
   button {
@@ -91,29 +94,5 @@ body {
   100% { transform: scale(1); }
 }
 
-.floating-element {
-  position: fixed;
-  font-size: 1.8rem;
-  animation: floatAnimation ease-in-out infinite;
-  opacity: 0.8;
-  pointer-events: none;
-  user-select: none;
-  z-index: 999; /* Ensure it appears above everything */
-}
 
-/* Random Floating Animation */
-@keyframes floatAnimation {
-  0% {
-      transform: scale(1) translateY(0);
-      opacity: 1;
-  }
-  50% {
-      transform: scale(1.2) translateY(-30px);
-      opacity: 0.8;
-  }
-  100% {
-      transform: scale(1) translateY(0);
-      opacity: 0;
-  }
-}
 
