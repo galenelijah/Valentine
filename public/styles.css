@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #fbe5e7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Push content down below the header */
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c94b62;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Caption Styling */
+.caption {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Lightbox (Full-Screen Image View) */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .caption {
+        font-size: 0.9em;
+    }
+}
+
+#countdown {
+    font-family: 'Arial', sans-serif;
+    color: #ff6f61;
+    text-align: center;
+    margin-top: 100px;
+    top: 0;
+    position: absolute;
+  }
+  
+  /* Countdown Timer Display */
+  #countdown-timer {
+    font-size: 2em;
+    background-color: #fff3e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .floating-element {
+    position: fixed;
+    font-size: 1.8rem;
+    animation: floatAnimation ease-in-out infinite;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Random Floating Animation */
+@keyframes floatAnimation {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) translateY(-30px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 0;
+    }
+}
+
+button {
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id = "back">Go Back</button>
+    <!-- Fixed Header -->
+    <div class="header">Our Memories Together ❤️</div>
+
+    <div id="countdown">
+        <h3> Days Until When? </h3>
+        <p id="countdown-timer"></p>
+        
+      </div>
+    <!-- Photo Gallery with Captions -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/photo1.jpg" alt="Memory 1">
+            <p class="caption">Our First Date 🥰</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo2.jpg" alt="Memory 2">
+            <p class="caption">Beach Trip Adventure 🌊</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo3.jpg" alt="Memory 3">
+            <p class="caption">Late Night Talks 🌙</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/photo4.jpg" alt="Memory 4">
+            <p class="caption">Our Favorite Cafe ☕</p>
+        </div>
+        <div class="gallery-item">
+            <img src="photobooth.PNG" alt="Memory 5">
+            <p class="caption">Surprise Date 💕</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+        <div class="gallery-item">
+            <img src="redlight.JPEG" alt="Memory 6">
+            <p class="caption">Movie Night 🎬</p>
+        </div>
+    </div>
+
+    <!-- Lightbox (Fullscreen Image View) -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">✖</span>
+        <img id="lightbox-img" src="" alt="Full Image">
+    </div>
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
