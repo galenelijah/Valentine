@@ -97,7 +97,7 @@ body {
 
 
 /* 📱 Mobile Optimizations */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .letter {
       max-width: 100%;
       padding: 15px;
