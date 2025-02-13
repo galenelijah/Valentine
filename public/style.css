@@ -98,6 +98,13 @@ body {
 
 /* 📱 Mobile Optimizations */
 @media (max-width: 600px) {
+
+  body {
+      
+      height: auto;
+      padding: 20px;
+  }
+
   .letter {
       max-width: 100%;
       padding: 15px;
