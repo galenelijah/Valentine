@@ -100,9 +100,9 @@ body {
 @media (min-width: 600px) {
   .letter {
       max-width: 100%;
-      padding: 15px;
+      padding: 10px;
       text-overflow: scroll;
-      
+      height: fit-content;
       max-height: 100%;
   }
 
