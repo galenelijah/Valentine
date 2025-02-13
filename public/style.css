@@ -96,3 +96,27 @@ body {
 
 
 
+/* 📱 Mobile Optimizations */
+@media (max-width: 600px) {
+  .letter {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .message {
+      font-size: 0.95em;
+  }
+
+  button {
+      font-size: 0.9em;
+      padding: 10px 15px;
+  }
+
+  .floating-element {
+      font-size: 1.2rem; /* Smaller floating hearts */
+  }
+}
